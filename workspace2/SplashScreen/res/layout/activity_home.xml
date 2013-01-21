@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget37"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:id="@+id/listhelplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#104B0B" >
+
+        <ImageView
+            android:id="@+id/widget36"
+            android:layout_width="108dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/a"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/list_big" />
+
+        <ImageView
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.67"
+            android:contentDescription="@string/a"
+            android:src="@drawable/langset" />
+
+        <ImageView
+            android:id="@+id/widget31"
+            android:layout_width="108dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/a"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/help_big" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listhelplayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/botwrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/botcontainer"
+                android:layout_width="319dp"
+                android:layout_height="293dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/robot"
+                android:paddingLeft="5dp" >
+
+                <TextView
+                    android:id="@+id/menuTeksHasil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:ems="10"
+                    android:paddingTop="90dp"
+                    android:text="@string/defaulthome"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="40sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/wrapinputtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botcontainer"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/menuTeksedit"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textfix"
+                    android:ems="10"
+                    android:hint="@string/cihint"
+                    android:textSize="18sp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/gbrgo"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/a"
+                    android:src="@drawable/go" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

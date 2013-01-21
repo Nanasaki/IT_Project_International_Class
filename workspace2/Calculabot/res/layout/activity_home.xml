@@ -25,6 +25,14 @@
             android:src="@drawable/list_big" />
 
         <ImageView
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.67"
+            android:contentDescription="@string/a"
+            android:src="@drawable/langset" />
+
+        <ImageView
             android:id="@+id/widget31"
             android:layout_width="108dp"
             android:layout_height="50dp"
